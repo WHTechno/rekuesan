@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solusi Infrastruktur IT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed top-0 w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-blue-800">IT Solutions</div>
+        <div class="space-x-8">
+          <a href="#" onclick="showPage('home')" class="text-blue-600 hover:text-blue-800 font-medium">Home</a>
+          <a href="#" onclick="showPage('services')" class="text-blue-600 hover:text-blue-800 font-medium">Services</a>
+          <a href="#" onclick="showPage('about')" class="text-blue-600 hover:text-blue-800 font-medium">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+  <div id="home" class="page active">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+        Building Infrastructure Together, Breaking All Difficulties
+      </h1>
+      <p class="text-lg md:text-xl text-blue-700 max-w-3xl mx-auto">
+        Welcome to our platform, where we empower businesses and individuals by providing cutting-edge IT infrastructure solutions. Our mission is to simplify complex challenges and build robust, scalable systems that drive success.
+      </p>
+      <div id="canvas-container" style="width: 300px; height: 300px;"></div>
+    </div>
+  </div>
+
+  <!-- Services Page -->
+  <div id="services" class="page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-8 text-center">Layanan Kami</h2>
+      <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </div>
+
+  <!-- About Page -->
+  <div id="about" class="page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-8">Tentang Kami</h2>
+      <div class="flex justify-center mb-8">
+        <div class="project-card rounded-lg p-6 max-w-sm">
+          <img src="assets/images/logo.png" alt="Logo" class="w-32 h-32 mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold text-blue-800">Misi Kami</h3>
+          <p class="text-blue-700">
+            Kami berdedikasi untuk memberikan solusi IT inovatif yang memberdayakan klien kami untuk mencapai tujuan mereka dengan mudah dan efisien.
+          </p>
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold text-blue-900 mb-4">Kontak Kami</h3>
+      <div class="flex justify-center space-x-4">
+        <a href="https://t.me/yourusername" class="text-blue-600 hover:text-blue-800">Telegram</a>
+        <a href="mailto:your.email@example.com" class="text-blue-600 hover:text-blue-800">Email</a>
+        <a href="https://discord.gg/yourinvite" class="text-blue-600 hover:text-blue-800">Discord</a>
+        <a href="https://github.com/yourusername" class="text-blue-600 hover:text-blue-800">GitHub</a>
+        <a href="https://x.com/yourusername" class="text-blue-600 hover:text-blue-800">X</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cube.js"></script>
+</body>
+</html>
